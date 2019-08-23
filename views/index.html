@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URL Shortener</title>
+        <link rel="shortcut icon" href="/assets/toypiano.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <link href="/public/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>API Project: URL Shortener Micoroservice</h2>
+            <section class="url-input">
+                <header>
+                    <h3>Short URL Creation</h3>
+                    <p>Enter valid URL starting with protocol (<code>http://</code> or <code>https://</code></p> 
+                </header>                
+                <form action="api/shorturl/new" method="POST">
+                    <label for="url_input">URL to be shortend</label>
+                    <input id="url_input" type="text" name="url" value="https://www.github.com">
+                    <input type="submit" value="POST URL">
+                </form>    
+            </section>
+        </div>
+    </body>
+</html>
